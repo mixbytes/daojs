@@ -3,7 +3,7 @@
  */
 // copyright defined in eosjs/LICENSE.txt
 
-import * as ecc from 'eosjs-ecc';
+const ecc = require('daojs-ecc');
 import { SignatureProvider, SignatureProviderArgs } from './eosjs-api-interfaces';
 import { convertLegacyPublicKey } from './eosjs-numeric';
 

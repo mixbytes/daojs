@@ -1,4 +1,4 @@
-import * as ecc from 'eosjs-ecc';
+const ecc = require('daojs-ecc');
 import { JsSignatureProvider } from '../eosjs-jssig';
 
 describe('JsSignatureProvider', () => {

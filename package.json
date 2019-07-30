@@ -1,7 +1,7 @@
 {
-  "name": "eosjs",
-  "version": "20.0.0",
-  "description": "Talk to eos API",
+  "name": "daocasino-js",
+  "version": "0.1.0",
+  "description": "Talk to dao API",
   "main": "dist/index.js",
   "scripts": {
     "cypress": "./scripts/run-cypress.sh",
@@ -14,22 +14,22 @@
     "test-all": "yarn test && yarn test-node && yarn cypress",
     "build": "tsc -p ./tsconfig.json && cp src/ripemd.es5.js dist/ripemd.js",
     "build-web": "webpack --config webpack.prod.js && webpack --config webpack.debug.js",
-    "build-production": "yarn build && yarn build-web && yarn test-all",
+    "build-production": "yarn build && yarn build-web",
     "clean": "rm -rf dist",
     "docs-init": "sh .docs/scripts/init.sh",
     "docs-build": "sh .docs/scripts/build.sh",
     "docs-serve": "python -m SimpleHTTPServer",
     "docs-publish": "sh .docs/scripts/publish.sh"
   },
-  "author": "block.one",
+  "author": "mixbytes",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/EOSIO/eosjs.git"
+    "url": "https://github.com/mixbytes/daojs.git"
   },
   "dependencies": {
     "babel-runtime": "6.26.0",
-    "eosjs-ecc": "4.0.4",
+    "daojs-ecc": "0.1.1",
     "text-encoding": "0.7.0"
   },
   "devDependencies": {
